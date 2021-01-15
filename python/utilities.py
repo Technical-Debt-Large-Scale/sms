@@ -16,7 +16,7 @@ def deleteFileIfExist(path):
         if os.path.exists(path):
             os.remove(path)
         else:
-            print("The file does not exist")
+            print("The file {} does not exist".format(path))
 
 # Directory and File manipulation
 def createNewEmptyFile(path):
