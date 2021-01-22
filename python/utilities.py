@@ -110,3 +110,32 @@ def loadSupportTokenization():
     nltk.download('punkt')
     print('Download concluído.')
     print('Unzip concluído.')
+
+def list_of_items(df_data, column_name):
+    list_of_contents = []
+    for item in list(df_data[column_name]):
+        item = item.split(',')
+        for subitem in item:
+            subitem = ' '.join(subitem.split())
+            list_of_contents.append(subitem)
+    set_of_contents = set(list_of_contents)
+    list_of_uniques_contents = list(set_of_contents)
+    print("List of all {} {} : {}".format(len(list_of_contents), column_name, list_of_contents))
+    print("")
+    print("List of unique {} {} : {}".format( len(list_of_uniques_contents) , column_name, list_of_uniques_contents))
+    return list_of_contents, list_of_uniques_contents
+
+def show_bar_plot(group, count, subtitle, x_label=None, y_label=None):
+    plt.bar(group,count)
+    plt.title(subtitle)
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+    plt.show()
+
+def show_bar_plot_complete(my_dictionary, subtitle, x_label=None, y_label=None):
+    group = []
+    count = []
+    for key, value in my_dictionary.items():
+        group.append(key)
+        count.append(value)
+    show_bar_plot(group, count, subtitle, x_label, y_label)
