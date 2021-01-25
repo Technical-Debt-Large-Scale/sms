@@ -120,6 +120,8 @@ def list_of_items(df_data, column_name):
             list_of_contents.append(subitem)
     set_of_contents = set(list_of_contents)
     list_of_uniques_contents = list(set_of_contents)
+    list_of_contents.sort()
+    list_of_uniques_contents.sort()
     print("List of all {} {} : {}".format(len(list_of_contents), column_name, list_of_contents))
     print("")
     print("List of unique {} {} : {}".format( len(list_of_uniques_contents) , column_name, list_of_uniques_contents))
