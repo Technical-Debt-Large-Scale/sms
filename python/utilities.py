@@ -10,6 +10,8 @@ import datetime
 import ssl
 # importa a biblioteca natural language took kit
 import nltk
+import seaborn as sns
+import pandas as pd
 
 # Directory and File manipulation
 def deleteFileIfExist(path):
@@ -128,7 +130,7 @@ def list_of_items(df_data, column_name):
     return list_of_contents, list_of_uniques_contents
 
 def show_bar_plot(group, count, subtitle, x_label=None, y_label=None):
-    plt.bar(group,count)
+    ax = plt.bar(group,count)
     plt.title(subtitle)
     plt.xlabel(x_label)
     plt.ylabel(y_label)
@@ -141,3 +143,35 @@ def show_bar_plot_complete(my_dictionary, subtitle, x_label=None, y_label=None):
         group.append(key)
         count.append(value)
     show_bar_plot(group, count, subtitle, x_label, y_label)
+
+def show_histogram(df_data, title, bins):
+    ax = sns.distplot(df_data, bins=bins, kde=False)
+    ax.set(title=title)
+    # label each bar in histogram
+    for p in ax.patches:
+        height = p.get_height() # get the height of each bar
+        # adding text to each bar
+        ax.text(x = p.get_x()+(p.get_width()/2), y = height+0.2, s = '{:.0f}'.format(height), ha = 'center')
+
+def convert_lists_in_dataframe(group, count):
+    my_dict = {}
+    my_dict['x'] = group
+    my_dict['y'] = count
+    my_df = pd.DataFrame.from_dict(my_dict)
+    return my_df
+
+def show_bar_plot_temp(group, count, subtitle, x, y):
+    # plot vertical barplot
+    sns.set(rc={'figure.figsize':(10,5)})
+    df_data = convert_lists_in_dataframe(group, count)
+    ax = sns.barplot(x=x, y=y, data=df_data)
+    ax.set(title=subtitle) # title barplot
+    # label each bar in barplot
+    for p in ax.patches:
+        # get the height of each bar
+        height = p.get_height()
+        # adding text to each bar
+        ax.text(x = p.get_x()+(p.get_width()/2), # x-coordinate position of data label, padded to be in the middle of the bar
+        y = height+100, # y-coordinate position of data label, padded 100 above bar
+        s = '{:.0f}'.format(height), # data label, formatted to ignore decimals
+        ha = 'center') # sets horizontal alignment (ha) to center
