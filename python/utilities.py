@@ -175,3 +175,26 @@ def show_bar_plot_temp(group, count, subtitle, x, y):
         y = height+100, # y-coordinate position of data label, padded 100 above bar
         s = '{:.0f}'.format(height), # data label, formatted to ignore decimals
         ha = 'center') # sets horizontal alignment (ha) to center
+
+def clean_related_work(df_data, column_name):
+    list_of_related_work = []
+    for item in list(df_data[column_name]): 
+        item = str(item)
+        item = ' '.join(item.split())
+        list_of_related_work.append(item)
+
+    list_of_related_work_sorted = []
+    for each in list_of_related_work:
+        each = each.split('#')
+        for each_one in each:
+            each_one = each_one.split(';')
+            if (len(each_one) > 1):
+                if each_one[1][0] == ' ':
+                    each_one[1] = each_one[1][1:]
+                each_one[1] = each_one[1].replace('.', '')
+                each_one[1] = each_one[1].replace(',', '')
+                each_one[1] = each_one[1].replace('“', '')
+                each_one[1] = each_one[1].replace('”', '')
+                list_of_related_work_sorted.append(each_one[1])
+    list_of_related_work_sorted.sort()
+    return list_of_related_work_sorted
