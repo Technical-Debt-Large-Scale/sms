@@ -198,3 +198,46 @@ def clean_related_work(df_data, column_name):
                 list_of_related_work_sorted.append(each_one[1])
     list_of_related_work_sorted.sort()
     return list_of_related_work_sorted
+
+def remove_cotation_space1(my_list):
+    list_temp = []
+    if (len(my_list) > 1):
+        for each in my_list:
+            each = each.replace('"', '')
+            if each[0] == ' ':
+                each = each[1:]
+            if each[-1] == ' ':
+                each = each[:-1]
+            list_temp.append(each)
+        return list_temp
+    else:
+        return my_list
+
+def extract_techniques_approuches_tools(df_data, column_name='Techniques, approach and methods (parsed)'):
+    list_of_techniques = []
+    list_of_approaches = []
+    list_of_tools = []
+    list_of_tat = []
+
+    for item in list(df_data[column_name]): 
+        item = str(item)
+        item = ' '.join(item.split())
+        list_of_tat.append(item)
+    for each in list_of_tat:
+        each = each.split('#')
+        general = each[0].replace('general:', '') 
+        general = general.split(',')
+        general = remove_cotation_space1(general)
+        for one in general:
+            list_of_techniques.append(one)    
+        approuch = each[1].replace('approuch:', '')
+        approuch = approuch.split(',')
+        approuch = remove_cotation_space1(approuch)
+        for one in approuch:
+            list_of_approaches.append(one)
+        tools = each[2].replace('tools:', '')
+        tools = tools.split(',')
+        tools = remove_cotation_space1(tools)
+        for one in tools:
+            list_of_tools.append(one)
+    return list_of_tat, list_of_techniques, list_of_approaches, list_of_tools
