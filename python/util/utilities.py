@@ -229,15 +229,16 @@ def extract_techniques_approuches_tools(df_data, column_name='Techniques, approa
         general = general.split(',')
         general = remove_cotation_space1(general)
         for one in general:
-            list_of_techniques.append(one)    
-        approuch = each[1].replace('approuch:', '')
-        approuch = approuch.split(',')
-        approuch = remove_cotation_space1(approuch)
-        for one in approuch:
-            list_of_approaches.append(one)
-        tools = each[2].replace('tools:', '')
-        tools = tools.split(',')
-        tools = remove_cotation_space1(tools)
-        for one in tools:
-            list_of_tools.append(one)
+            list_of_techniques.append(one)   
+        if (len(each) == 3):  
+            approuch = each[1].replace('approuch:', '')
+            approuch = approuch.split(',')
+            approuch = remove_cotation_space1(approuch)
+            for one in approuch:
+                list_of_approaches.append(one)
+            tools = each[2].replace('tools:', '')
+            tools = tools.split(',')
+            tools = remove_cotation_space1(tools)
+            for one in tools:
+                list_of_tools.append(one)
     return list_of_tat, list_of_techniques, list_of_approaches, list_of_tools
