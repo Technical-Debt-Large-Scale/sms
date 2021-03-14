@@ -12,6 +12,7 @@ import ssl
 import nltk
 import seaborn as sns
 import pandas as pd
+import math
 
 # Directory and File manipulation
 def deleteFileIfExist(path):
@@ -242,3 +243,71 @@ def extract_techniques_approuches_tools(df_data, column_name='Techniques, approa
             for one in tools:
                 list_of_tools.append(one)
     return list_of_tat, list_of_techniques, list_of_approaches, list_of_tools
+
+
+def isnan(value):
+    try:
+        return math.isnan(float(value))
+    except:
+        return False
+
+def create_latex_table(my_df, my_path, my_file_name):
+    file_path = my_path + '/' + my_file_name
+    try:
+        with open(file_path,'w') as my_file:
+            my_file.write(my_df.to_latex(index=False))
+        print("Arquivo " + file_path + "  gerado com sucesso!")
+    except:
+        print("Erro ao tentar gerar o arquivo latex!" + file_path)
+
+def view_question_distribution(my_dict, my_list, my_question):
+    list_q_is_nan = []
+    list_q_is_no = []
+    list_q_feature = []
+    for key, value in my_dict.items():
+        if isnan(value):
+            list_q_is_nan.append((key, value))
+        if (value == 'no'):
+            list_q_is_no.append((key, value))
+        if ( not isnan(value) and (value != 'no') ):
+            list_q_feature.append((key, value))
+
+    list_of_most_common_q = []
+    list_of_most_common_q.append(len(list_q_feature))
+    list_of_most_common_q.append(len(list_q_is_no))
+    list_of_most_common_q.append(len(list_q_is_nan))
+
+    q = my_list
+    count_q = list_of_most_common_q
+    my_q = {my_question: q, 'count':count_q}
+    my_q
+
+    my_q_id = list(range(1,len(list_of_most_common_q)+1))
+    my_q_id
+
+    df_my_q = pd.DataFrame(data=my_q, index=my_q_id)
+    df_my_q.reset_index(drop=True, inplace=True)
+    return df_my_q
+
+def view_question_distribution_update_sp(my_df_distribution, my_df_data, my_feature):
+    i = 0
+    for each in my_df_distribution:
+        list_q_is_nan = []
+        list_q_is_no = []
+        list_q_feature = []
+        j = 0
+        for item in my_df_data[my_feature]:
+            value = item
+            if isnan(value):
+                list_q_is_nan.append(my_df_data['sp'].iloc[j])
+            if (str(value).lower() == 'no'):
+                list_q_is_no.append(my_df_data['sp'].iloc[j])
+            if ( not isnan(value) and (str(value).lower() != 'no') ):
+                list_q_feature.append(my_df_data['sp'].iloc[j])
+            j = j + 1
+        i = i + 1
+    my_df_distribution['sp'].iloc[0] = list_q_feature
+    my_df_distribution['sp'].iloc[1] = list_q_is_no
+    my_df_distribution['sp'].iloc[2] = list_q_is_nan
+
+    return my_df_distribution
