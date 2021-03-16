@@ -75,6 +75,23 @@ def generateWordcloudFromTextFile(path_text_file, file_name):
     file_Name_to_store = path_images + "/" + file_name + ".png"
     wordcloud.to_file(file_Name_to_store)
 
+ # WordCloud manipulation
+def generateWordcloudFromFrequencies(my_frequence, file_name):
+    # Generate a word cloud image
+    wordcloud = WordCloud(width = 1920, height = 1080, random_state=1, background_color='black', colormap='Set2', 
+        collocations=False).generate_from_frequencies(my_frequence)
+    # Display the generated image:
+    #wordcloud.generate_from_frequencies(frequencies=dictionaryOfFileFrequence)
+    plt.figure()
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
+    # Save the image in the img folder:
+    path_images = "/Users/armandosoaressousa/git/tdmls/sms/images"
+    file_Name_to_store = path_images + "/" + file_name + ".png"
+    wordcloud.to_file(file_Name_to_store)
+   
+
 # NLP (Natural Language Processing)
 def contentAnalysisFromTextFile(path_text_file, sizeWord=3):
     text_content = open(path_text_file, encoding='utf-8').read()
