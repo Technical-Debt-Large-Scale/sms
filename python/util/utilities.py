@@ -13,6 +13,8 @@ import nltk
 import seaborn as sns
 import pandas as pd
 import math
+from collections import Counter
+
 
 # Directory and File manipulation
 def deleteFileIfExist(path):
@@ -271,11 +273,11 @@ def isnan(value):
 def create_latex_table(my_df, my_path, my_file_name):
     file_path = my_path + '/' + my_file_name
     try:
-        with open(file_path,'w') as my_file:
+        with open(file_path,'w', encoding='utf-8') as my_file:
             my_file.write(my_df.to_latex(index=False))
         print("Arquivo " + file_path + "  gerado com sucesso!")
-    except:
-        print("Erro ao tentar gerar o arquivo latex!" + file_path)
+    except Exception as e:
+        print("Erro " + str(e)+ " ao tentar gerar o arquivo latex! " + file_path)
 
 def view_question_distribution(my_dict, my_list, my_question):
     list_q_is_nan = []
@@ -328,3 +330,25 @@ def view_question_distribution_update_sp(my_df_distribution, my_df_data, my_feat
     my_df_distribution['sp'].iloc[2] = list_q_is_nan
 
     return my_df_distribution
+
+# 1) Dataset
+def load_dataset(my_path='../../dataset/Extraction_form_basic.xlsx'):
+    df_sms_extraction = pd.read_excel(my_path)
+    pd.set_option('display.max_colwidth',255)
+    return df_sms_extraction
+
+# Adding new column sp (Selected Paper)
+def add_column_sp(df_sms_extraction):
+    df_sms_extraction['SP Index'] = df_sms_extraction.index+1
+    df_sms_extraction['SP Aux'] = 'SP' 
+    df_sms_extraction['sp'] = [y + str(x) for x, y in zip(df_sms_extraction['SP Index'], df_sms_extraction['SP Aux'])]
+    return df_sms_extraction
+
+# 2) Selected papers
+def selected_papers(df_sms_extraction):
+    df_my_data_papers = df_sms_extraction[['sp', 'Citation', 'Title']]
+    return df_my_data_papers
+
+def remove_enter(my_df):
+    my_df = ' '.join(my_df.split())
+    return my_df
