@@ -42,5 +42,7 @@ The following script [Monitoring](https://github.com/Technical-Debt-Large-Scale/
 ## RQ4 - Tools and Methods to Identify ATD
 The following scripts [Tools and Methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q4.ipynb) are used to generate ATD's tools and ATD's method classification results. 
 
+WordCloud of methods [methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/images/atdmethods.png)
+
 ## RQ5 - Calculate the Cost of ATD item
 The following script [Cost of ATD](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q5.ipynb) is used to generate results about how to calculate ATD item cost
