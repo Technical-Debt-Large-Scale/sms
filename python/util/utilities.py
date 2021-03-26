@@ -14,7 +14,7 @@ import seaborn as sns
 import pandas as pd
 import math
 from collections import Counter
-
+from tabulate import tabulate
 
 # Directory and File manipulation
 def deleteFileIfExist(path):
@@ -278,6 +278,15 @@ def create_latex_table(my_df, my_path, my_file_name):
         print("Arquivo " + file_path + "  gerado com sucesso!")
     except Exception as e:
         print("Erro " + str(e)+ " ao tentar gerar o arquivo latex! " + file_path)
+
+def create_markdown_table(my_df, my_path, my_file_name):
+    file_path = my_path + '/' + my_file_name
+    try:
+        with open(file_path,'w', encoding='utf-8') as my_file:
+            my_file.write( tabulate(my_df, tablefmt="pipe", headers="keys",  ) )
+        print("Arquivo " + file_path + "  gerado com sucesso!")
+    except Exception as e:
+        print("Erro " + str(e)+ " ao tentar gerar o arquivo markdown! " + file_path)
 
 def view_question_distribution(my_dict, my_list, my_question):
     list_q_is_nan = []
