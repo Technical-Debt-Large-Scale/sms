@@ -54,7 +54,7 @@ The following script [Monitoring](https://github.com/Technical-Debt-Large-Scale/
 
 ## RQ4 - Tools and Methods to Identify ATD
 
-[Tools](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q4_distribution_detailed.md) | [Methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q4_methods_detailed.md)
+[Tools](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q4_tools_and_other_distribution_detailed) | [Methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q4_methods_detailed.md)
 
 The following scripts [Tools and Methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q4.ipynb) are used to generate ATD's tools and ATD's method classification results. 
 
