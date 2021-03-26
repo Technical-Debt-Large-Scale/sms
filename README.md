@@ -32,6 +32,8 @@ The following scripts [Selected papers](https://github.com/Technical-Debt-Large-
 
 ## Research type of publication - according to Wieringa et al. (2006)
 
+[Research types](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q7_distribution_detailed.md)
+
 The following script  [Research type](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_rs_type.ipynb) is used to generate results about research type classification. 
 
 ## RQ1 - Type of Architectural Technical Debt
