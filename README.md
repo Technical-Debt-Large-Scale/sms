@@ -26,26 +26,42 @@ We used the following [Form](https://github.com/Technical-Debt-Large-Scale/sms/b
 
 ## Publications and Venue Types
 
-[Selected Papers](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_papers.md)
+[Selected Papers](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_papers.md) | [Venues](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_venues.md)
 
 The following scripts [Selected papers](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_sps.ipynb) and [sms_extraction](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/analyses/sms_extraction.ipynb) is used to generate results about publications and venue types. 
 
 ## Research type of publication - according to Wieringa et al. (2006)
+
 The following script  [Research type](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_rs_type.ipynb) is used to generate results about research type classification. 
 
 ## RQ1 - Type of Architectural Technical Debt
+
+[ATD Types](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q1.md)
+
 The following script [ATD types](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q1.ipynb) is used to generate results about ATD's type classification. 
 
 ## RQ2 - Measurement of ATD
+
+[Measurement](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q2_distribution_detailed.md) 
+
 The following script [Measurement](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q2.ipynb)  is used to generate results about ATD's measurement classification. 
 
 ## RQ3 - Monitoring of ATD
+
+[Monitoring](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q3_distribution_detailed.md) 
+
 The following script [Monitoring](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q4.ipynb)  is used to generate results about ATD's monitoring classification. 
 
 ## RQ4 - Tools and Methods to Identify ATD
+
+[Tools](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q4_distribution_detailed.md) | [Methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q4_methods_detailed.md)
+
 The following scripts [Tools and Methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q4.ipynb) are used to generate ATD's tools and ATD's method classification results. 
 
 WordCloud of methods [methods](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/images/atdmethods.png)
 
 ## RQ5 - Calculate the Cost of ATD item
+
+[Calculate cost of ATD](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q5_distribution_detailed.md) 
+
 The following script [Cost of ATD](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q5.ipynb) is used to generate results about how to calculate ATD item cost
