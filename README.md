@@ -25,6 +25,9 @@ We used the following [Form](https://github.com/Technical-Debt-Large-Scale/sms/b
 # Scripts used to analyse the dataset
 
 ## Publications and Venue Types
+
+[Selected Papers](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_papers.md)
+
 The following scripts [Selected papers](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_sps.ipynb) and [sms_extraction](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/analyses/sms_extraction.ipynb) is used to generate results about publications and venue types. 
 
 ## Research type of publication - according to Wieringa et al. (2006)
