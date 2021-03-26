@@ -18,7 +18,7 @@ The main activities of this SMS follow five main phases:
  - Extraction process 
  - Analysis process
 
-Figure 1 [] show the flow used in this SMS
+Figure 1 ![SMS Process](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/images/sms-process.png) show the flow used in this SMS
 
 We used the following [Form](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_form.ipynb) form to extract and analyze the data from the spreadsheet. 
 
