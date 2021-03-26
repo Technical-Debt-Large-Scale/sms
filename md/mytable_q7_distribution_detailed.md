@@ -1,10 +1,6 @@
-\begin{tabular}{lrl}
-\toprule
-            research &  count &                                                                                                                          sp \\
-\midrule
- Validation Research &     22 &  [SP3, SP6, SP7, SP9, SP13, SP18, SP21, SP24, SP28, SP29, SP30, SP32, SP35, SP37, SP43, SP44, SP48, SP49, SP53, SP56, SP57] \\
- Evaluation research &     21 &   [SP1, SP2, SP4, SP5, SP8, SP12, SP14, SP15, SP16, SP17, SP19, SP20, SP22, SP25, SP27, SP33, SP34, SP36, SP40, SP42, SP46] \\
-   Solution proposal &     10 &                                                                [SP10, SP11, SP23, SP31, SP39, SP41, SP51, SP52, SP54, SP55] \\
- Philosophycal paper &      4 &                                                                                                    [SP26, SP45, SP47, SP50] \\
-\bottomrule
-\end{tabular}
+|    | research            |   count | sp                                                                                                                                                                   |
+|---:|:--------------------|--------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | Validation Research |      22 | ['SP3', 'SP6', 'SP7', 'SP9', 'SP13', 'SP18', 'SP21', 'SP24', 'SP28', 'SP29', 'SP30', 'SP32', 'SP35', 'SP37', 'SP43', 'SP44', 'SP48', 'SP49', 'SP53', 'SP56', 'SP57'] |
+|  1 | Evaluation research |      21 | ['SP1', 'SP2', 'SP4', 'SP5', 'SP8', 'SP12', 'SP14', 'SP15', 'SP16', 'SP17', 'SP19', 'SP20', 'SP22', 'SP25', 'SP27', 'SP33', 'SP34', 'SP36', 'SP40', 'SP42', 'SP46']  |
+|  2 | Solution proposal   |      10 | ['SP10', 'SP11', 'SP23', 'SP31', 'SP39', 'SP41', 'SP51', 'SP52', 'SP54', 'SP55']                                                                                     |
+|  3 | Philosophycal paper |       4 | ['SP26', 'SP45', 'SP47', 'SP50']                                                                                                                                     |
