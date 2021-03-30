@@ -20,7 +20,7 @@ The main activities of this SMS follow five main phases:
 
 Figure 1 ![SMS Process](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/images/sms-process.png) show the flow used in this SMS
 
-We used the following [Form](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_form.ipynb) form to extract and analyze the data from the spreadsheet. 
+We used the following [Form](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_extract_data_eg.md) | [Script](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_form.ipynb) to extract and analyze the data from the spreadsheet. 
 
 # Scripts used to analyse the dataset
 
@@ -31,6 +31,8 @@ We used the following [Form](https://github.com/Technical-Debt-Large-Scale/sms/b
 The following scripts [Selected papers](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_sps.ipynb) and [sms_extraction](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/analyses/sms_extraction.ipynb) is used to generate results about publications and venue types. 
 
 ## Research type of publication - according to Wieringa et al. (2006)
+
+[Research types](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q7_distribution_detailed.md)
 
 The following script  [Research type](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_rs_type.ipynb) is used to generate results about research type classification. 
 
