@@ -1,8 +1,8 @@
-|    | q1                                            |   count | sp                                                                                                                      |
-|---:|:----------------------------------------------|--------:|:------------------------------------------------------------------------------------------------------------------------|
-|  0 | Not specified                                 |      15 | ['SP1', 'SP10', 'SP12', 'SP13', 'SP23', 'SP26', 'SP32', 'SP33', 'SP34', 'SP36', 'SP43', 'SP45', 'SP46', 'SP47', 'SP55'] |
-|  1 | System-level structure quality issues         |      13 | ['SP6', 'SP16', 'SP19', 'SP24', 'SP27', 'SP30', 'SP39', 'SP42', 'SP44', 'SP49', 'SP50', 'SP51', 'SP52']                 |
-|  2 | Architecture Smells                           |      11 | ['SP3', 'SP9', 'SP17', 'SP18', 'SP21', 'SP28', 'SP29', 'SP37', 'SP48', 'SP56', 'SP57']                                  |
-|  3 | Architectural compliance issues               |       9 | ['SP7', 'SP8', 'SP11', 'SP14', 'SP15', 'SP20', 'SP22', 'SP31', 'SP41']                                                  |
-|  4 | Complex architectural behavioral dependencies |       6 | ['SP2', 'SP4', 'SP5', 'SP38', 'SP53', 'SP54']                                                                           |
-|  5 | Violations of good architectural practices    |       3 | ['SP25', 'SP35', 'SP40']                                                                                                |
+|    | q1                                            |   count | sp                                                                                                              |
+|---:|:----------------------------------------------|--------:|:----------------------------------------------------------------------------------------------------------------|
+|  0 | Not specified                                 |      14 | ['SP1', 'SP10', 'SP12', 'SP13', 'SP23', 'SP26', 'SP32', 'SP33', 'SP34', 'SP36', 'SP43', 'SP45', 'SP46', 'SP47'] |
+|  1 | System-level structure quality issues         |      14 | ['SP6', 'SP16', 'SP19', 'SP24', 'SP27', 'SP30', 'SP39', 'SP42', 'SP44', 'SP49', 'SP50', 'SP51', 'SP52', 'SP55'] |
+|  2 | Architecture Smells                           |      11 | ['SP3', 'SP9', 'SP17', 'SP18', 'SP21', 'SP28', 'SP29', 'SP37', 'SP48', 'SP56', 'SP57']                          |
+|  3 | Architectural compliance issues               |       9 | ['SP7', 'SP8', 'SP11', 'SP14', 'SP15', 'SP20', 'SP22', 'SP31', 'SP41']                                          |
+|  4 | Complex architectural behavioral dependencies |       6 | ['SP2', 'SP4', 'SP5', 'SP38', 'SP53', 'SP54']                                                                   |
+|  5 | Violations of good architectural practices    |       3 | ['SP25', 'SP35', 'SP40']                                                                                        |
