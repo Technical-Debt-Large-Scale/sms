@@ -38,7 +38,7 @@ The following script  [Research type](https://github.com/Technical-Debt-Large-Sc
 
 ## RQ1 - Type of Architectural Technical Debt
 
-[ATD Types](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q1.md)
+[ATD Types](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q1_updated.md) | [ATD Types before findings](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/md/mytable_q1.md)
 
 The following script [ATD types](https://github.com/Technical-Debt-Large-Scale/sms/blob/master/python/auxiliary/Convert_tables_to_latex_q1.ipynb) is used to generate results about ATD's type classification. 
 
