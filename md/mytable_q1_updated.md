@@ -5,6 +5,6 @@
 |  2 | Architectural compliance issues               |       9 | ['SP7', 'SP8', 'SP11', 'SP14', 'SP15', 'SP20', 'SP22', 'SP31', 'SP41']                                          |
 |  3 | Complex architectural behavioral dependencies |       6 | ['SP2', 'SP4', 'SP5', 'SP38', 'SP53', 'SP54']                                                                   |
 |  4 | Violations of good architectural practices    |       3 | ['SP25', 'SP35', 'SP40']                                                                                        |
-|  5 | Social Debt                                   |       3 | ['SP12', 'SP45', 'SP46']                                                                                        |
-|  6 | Model-driven                                  |       2 | ['SP1', 'SP10']                                                                                                 |
-|  7 | Self Admited                                  |       1 | ['SP43']                                                                                                        |
+|  5 | Architectural Social Debt                     |       3 | ['SP12', 'SP45', 'SP46']                                                                                        |
+|  6 | Architectural Model-driven Debt               |       2 | ['SP1', 'SP10']                                                                                                 |
+|  7 | Architectural Self Admited Debt               |       1 | ['SP43']                                                                                                        |
