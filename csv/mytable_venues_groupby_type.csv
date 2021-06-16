@@ -1,0 +1,6 @@
+type;sp;count
+Conference;['SP3', 'SP4', 'SP15', 'SP16', 'SP20', 'SP24', 'SP50', 'SP1', 'SP11', 'SP23', 'SP31', 'SP42', 'SP44', 'SP48', 'SP5', 'SP9', 'SP19', 'SP37', 'SP17', 'SP29', 'SP47', 'SP28', 'SP32', 'SP38', 'SP14', 'SP22', 'SP43', 'SP52', 'SP8', 'SP21', 'SP34', 'SP53', 'SP6', 'SP54', 'SP10', 'SP45', 'SP35', 'SP39', 'SP51', 'SP13', 'SP7'];41
+Journal;['SP12', 'SP55', 'SP30', 'SP40', 'SP36', 'SP2', 'SP27', 'SP56', 'SP46'];9
+Workshop;['SP25', 'SP26', 'SP33', 'SP18'];4
+Symposium;['SP49', 'SP57'];2
+Book;['SP41'];1
