@@ -1,0 +1,7 @@
+|    | monitoring                                              |   count | sp                                                                                                                                            |
+|---:|:--------------------------------------------------------|--------:|:----------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | For each release analysed                               |      18 | ['SP5', 'SP8', 'SP9', 'SP12', 'SP14', 'SP16', 'SP17', 'SP19', 'SP21', 'SP22', 'SP28', 'SP30', 'SP36', 'SP37', 'SP47', 'SP48', 'SP49', 'SP57'] |
+|  1 | For each release plan                                   |       4 | ['SP1', 'SP2', 'SP15', 'SP25']                                                                                                                |
+|  2 | For each version analysed                               |       2 | ['SP3', 'SP18']                                                                                                                               |
+|  3 | For each revision history                               |       2 | ['SP4', 'SP7']                                                                                                                                |
+|  4 | For each revision history and issues related to version |       2 | ['SP6', 'SP11']                                                                                                                               |
