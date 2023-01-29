@@ -1,4 +1,5 @@
-|    | c                                                                                                       |   count | sp                                                                            |
+# RQ5 - Calculate the Cost of ATD item
+|    | How to calculate the cost to fix ATD                                                                                                       |   count | sp                                                                            |
 |---:|:--------------------------------------------------------------------------------------------------------|--------:|:------------------------------------------------------------------------------|
 |  0 | expert evaluation using proprietary formula to calculate effort in days                                 |      10 | ['SP4', 'SP8', 'SP9', 'SP12', 'SP14', 'SP17', 'SP18', 'SP19', 'SP25', 'SP46'] |
 |  1 | expert evaluation using proprietary formula to calculate effort in hours                                |       6 | ['SP5', 'SP22', 'SP27', 'SP31', 'SP37', 'SP40']                               |
